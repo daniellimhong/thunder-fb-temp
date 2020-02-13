@@ -8,6 +8,7 @@ body {
   align-items: center;
 }
 
+/**! INDEX HTML !**/
 /** Header **/
 header {
   display: flex;
@@ -61,19 +62,94 @@ header .thunder {
   -moz-box-shadow: 0px 6px 22px -1px rgba(0, 0, 0, 0.45);
   box-shadow: 0px 6px 22px -1px rgba(0, 0, 0, 0.45);
 }
-.navbar li a{
-    font-size: 50px;
-    letter-spacing: 3px;
-    color: #303841;
-    transition: 0.2s ease;
+.navbar li a {
+  font-size: 50px;
+  letter-spacing: 3px;
+  color: #303841;
+  transition: 0.2s ease;
 }
 
-.navbar li a:visited{
+.navbar li a:visited {
+  text-decoration: none;
+}
+.navbar li a:link {
+  text-decoration: none;
+}
+.navbar li a:hover {
+  letter-spacing: 5px;
+}
+
+/**! TEAM HTML !**/
+/** Team Body **/
+.team-body{
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/** Roster **/
+.roster {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+}
+
+.roster h2 {
+    font-size: 30px;
+    /* margin-bottom: -10px;
+    margin-top: -20px; */
+}
+
+.roster ul {
+  /* width: inherit; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+    align-content: center; */
+    margin-right: 35px;
+  list-style: none;
+}
+
+.roster ul li {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  /* margin-right: 35px; */
+  font-size: 20px;
+  /* align-items: center; */
+}
+
+/** Practice **/
+
+.practice{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 500px;
+    /* margin-bottom: 320px; */
+}
+
+.practice h2{
+    font-size: 30px;
+}
+.practice a:link{
     text-decoration: none;
-  }
-.navbar li a:link{
+}
+.practice a:visited{
     text-decoration: none;
-  }
-.navbar li a:hover{
-    letter-spacing: 5px;
-  }
+}
+
+/** Leadership **/
+.leadership{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: /00px; */
+    /* margin-bottom: 320px; */
+}
